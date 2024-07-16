@@ -12,27 +12,23 @@ This project provides a framework for building an AI-powered Telegram bot.
 
 1. **Clone the repository:**
    ```
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/iuwd/Ai-Telegram-Bot.git
    ```
 
 2. **Install dependencies:**
    ```
-   cd your-repo-name
+   cd Ai-Telegram-Bot
    pip install -r requirements.txt
    ```
 
 3. **Configure the bot:**
    * Obtain an API token from BotFather on Telegram ([https://t.me/BotFather](https://t.me/BotFather)).
-   * Create a `config.py` file based on `config.example.py` and replace placeholders with your information.
+   * **`TELEGRAM_BOT_TOKEN`** Your Telegram bot's API token in ```main.py```.
 
 4. **Run the bot:**
    ```
-   python bot.py
+   python main.py
    ```
-
-**Configuration (`config.py`):**
-
-* **`TELEGRAM_BOT_TOKEN`:** Your Telegram bot's API token.
 
 **Commands:**
 
@@ -41,20 +37,7 @@ This project provides a framework for building an AI-powered Telegram bot.
 
 **Extending the bot:**
 
-You can easily add new commands and functionalities to the bot. Create new Python files in the `commands` directory and define functions decorated with `@bot.command()` to handle different commands. 
-
-**Example Command:**
-```python
-from telegram import Update
-from telegram.ext import CallbackContext
-
-from bot import bot
-
-@bot.command("echo")
-def echo(update: Update, context: CallbackContext) -> None:
-    """Echoes the user's message."""
-    update.message.reply_text(update.message.text)
-```
+You can easily add new commands and functionalities to the bot. Create new commands in ```main.py``` or extend them on different files. 
 
 **Contributing:**
 
