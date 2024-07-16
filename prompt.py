@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 
 # --- Configuration ---
-genai.configure(api_key='AIzaSyDZUWGSkNnD1HtSrH2z-5JwxtVR1Ha-FsE')
+genai.configure(api_key="Gemini API TOKEN")
 
 generation_config = {
   "temperature": 1,
