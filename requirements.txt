@@ -1,0 +1,4 @@
+google.generativeai
+typing
+json
+python-telegram-bot
