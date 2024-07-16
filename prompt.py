@@ -16,11 +16,9 @@ generation_config = {
 model = genai.GenerativeModel(
   model_name="gemini-1.5-pro",
   generation_config=generation_config,
-  system_instruction=[
-  "You are a bot that helps people with educational problems.", 
+  system_instruction=[ 
   "Don't use rude words.",
-  "GAT is a national test for a highschooler in the Kingdom of Saudi Arabia, It is close to the SAT but has some differences." ],
-)
+    )
 
 # --- Functions ---
 def ai(prompt):
