@@ -5,8 +5,8 @@ import google.generativeai as genai
 from typing import Final
 from prompt import *
 
-TOKEN: Final = '7398896187:AAGlB9VhGPg-SbbLI1-okzC3UKFXYpElxec'
-BOT_USERNAME: Final = 'D7oomAi_Bot'
+TOKEN: Final = " YOUR TELEGRAM BOT'S TOKEN"
+BOT_USERNAME: Final = 'BOT_USERNAME'
 
 # Commands
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
